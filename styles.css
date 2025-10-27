@@ -1,0 +1,148 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+}
+
+header {
+    background-color: #00008B;
+    color: white;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+#search, #category-filter, #sort-filter {
+    padding: 0.5rem;
+    margin: 0 0.5rem;
+}
+
+#products {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 1rem;
+    padding: 1rem;
+}
+
+.product {
+    background: white;
+    border: 1px solid #ddd;
+    padding: 1rem;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    transition: transform 0.2s;
+    cursor: pointer;
+}
+
+.product:hover {
+    transform: scale(1.05);
+}
+
+.product img {
+    max-width: 100%;
+}
+
+.add-to-cart, .add-to-wishlist {
+    background: #28a745;
+    color: white;
+    border: none;
+    padding: 0.5rem;
+    cursor: pointer;
+    margin: 0.25rem;
+}
+
+.add-to-wishlist {
+    background: #ffc107;
+}
+
+#pagination {
+    text-align: center;
+    padding: 1rem;
+}
+
+#pagination button {
+    margin: 0 0.5rem;
+    padding: 0.5rem 1rem;
+    background: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+#cart, #wishlist {
+    background: white;
+    margin: 1rem;
+    padding: 1rem;
+    border: 1px solid #ddd;
+    position: fixed;
+    right: 0;
+    top: 100px;
+    width: 300px;
+    max-height: 400px;
+    overflow-y: auto;
+}
+
+#wishlist {
+    top: 550px;
+}
+
+#cart-items, #wishlist-items {
+    list-style: none;
+    padding: 0;
+}
+
+#clear-cart, #checkout {
+    background: #007bff;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    width: 100%;
+    margin-top: 0.5rem;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.4);
+}
+
+.modal-content {
+    background-color: white;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 600px;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.stars {
+    color: gold;
+}
+
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: stretch;
+    }
+    #cart, #wishlist {
+        position: static;
+        width: auto;
+    }
+}

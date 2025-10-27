@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vellia</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Vellia Brand</h1>
+        <input type="text" id="search" placeholder="Search products...">
+        <select id="category-filter">
+            <option value="all">All Categories</option>
+            <option value="electronics">Electronics</option>
+            <option value="clothing">Clothing</option>
+            <option value="home">Home & Garden</option>
+        </select>
+        <select id="sort-filter">
+            <option value="default">Sort By</option>
+            <option value="name-asc">Name A-Z</option>
+            <option value="price-asc">Price Low to High</option>
+            <option value="price-desc">Price High to Low</option>
+        </select>
+        <button id="login-btn">Login</button>
+        <div id="cart-icon">Cart: <span id="cart-count">0</span> items</div>
+        <div id="wishlist-icon">Wishlist: <span id="wishlist-count">0</span> items</div>
+    </header>
+    
+    <main>
+        <section id="products">
+            <!-- Products will be dynamically inserted here -->
+        </section>
+        <div id="pagination">
+            <!-- Pagination buttons will be added here -->
+        </div>
+        
+        <section id="cart">
+            <h2>Your Cart</h2>
+            <ul id="cart-items"></ul>
+            <p>Total: JOD<span id="cart-total">0</span></p>
+            <button id="clear-cart">Clear Cart</button>
+            <button id="checkout">Proceed to Checkout</button>
+        </section>
+        
+        <section id="wishlist">
+            <h2>Your Wishlist</h2>
+            <ul id="wishlist-items"></ul>
+        </section>
+    </main>
+    
+    <!-- Modal for product details -->
+    <div id="product-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <div id="modal-details"></div>
+        </div>
+    </div>
+    
+    <!-- Modal for login -->
+    <div id="login-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Login (Demo)</h2>
+            <form id="login-form">
+                <input type="email" placeholder="Email" required>
+                <input type="password" placeholder="Password" required>
+                <button type="submit">Login</button>
+            </form>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
