@@ -1,9 +1,10 @@
 document.addEventListener('DOMContentLoaded', () => {
     const productsData = [
-        { id: 1, name: 'Wireless Headphones', price: 49.99, category: 'electronics', img: 'https://via.placeholder.com/200', desc: 'High-quality wireless headphones.', reviews: [{ rating: 5, comment: 'Great sound!' }, { rating: 4, comment: 'Comfortable.' }] },
-        { id: 2, name: 'Smartphone', price: 299.99, category: 'electronics', img: 'https://via.placeholder.com/200', desc: 'Latest smartphone with camera.', reviews: [{ rating: 5, comment: 'Amazing camera!' }] },
-        { id: 3, name: 'T-Shirt', price: 19.99, category: 'clothing', img: 'https://via.placeholder.com/200', desc: 'Cotton t-shirt.', reviews: [{ rating: 3, comment: 'Okay quality.' }] },
-        { id: 4, name: 'Garden Hose', price: 29.99, category: 'home', img: 'https://via.placeholder.com/200', desc: 'Durable garden hose.', reviews: [{ rating: 4, comment: 'Works well.' }] },
+        { id: 1, name: 'Wireless Headphones', price: 3, category: 'electronics', img: 'pro-1.jpg', desc: 'عدسة هاتف', reviews: [{ rating: 5, comment: 'Great!' }, { rating: 4, comment: 'Comfortable.' }] },
+        { id: 2, name: 'Smartphone', price: 5, category: 'electronics', img: 'pro-1-1.jpg', desc: 'ضوء قمر', reviews: [{ rating: 5, comment: 'Amazing!' }] },
+        { id: 3, name: 'T-Shirt', price: 5, category: 'clothing', img: 'pro-3.jpeg', desc: 'سنسال', reviews: [{ rating: 3, comment: 'Okay quality.' }] },
+        { id: 4, name: 'Garden Hose', price: 4, category: 'home', img: 'pro-2.jpeg', desc: 'شمع معطر', reviews: [{ rating: 4, comment: 'Works well.' }] },
+         { id: 5, name: 'Garden Hose', price: 5, category: 'home', img: 'pro-4.jpeg', desc: 'مبخرة', reviews: [{ rating: 4, comment: 'Works well.' }] },
         // Add more products as needed
     ];
 
